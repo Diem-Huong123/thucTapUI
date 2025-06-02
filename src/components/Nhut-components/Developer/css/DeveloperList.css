@@ -1,0 +1,19 @@
+.member,
+.member-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.member-fullname,
+.member-userName {
+  padding: 10px;
+}
+
+.member:hover {
+  background-color: gray;
+}
+
+.developer-table{
+    width: 100%;
+    text-align: center;
+}

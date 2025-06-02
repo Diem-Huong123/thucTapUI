@@ -12,6 +12,12 @@ import HomeAdmin from "./components/HomeAdmin";
 import HomeUser from "./components/HomeUser";
 import AddServer from "./components/AddServer";
 
+
+// THANH NHUT Component
+import TeamList from './components/Nhut-components/Team/Teams';
+import DashboarApplication from './components/Nhut-components/Application/DashboarApplication';
+import UserService from './components/Nhut-components/UserComponent/UserService';
+
 function App() {
   return (
       <Router>
@@ -26,13 +32,22 @@ function App() {
             <Route element={<AdminLayout />}>
                 <Route path="/admin" element={<HomeAdmin />} />
                 <Route path="/addserver" element={<AddServer />} />
+
+                {/* START - THANH NHUT COMPONENT */}
+                <Route path="/nhom" element={<TeamList />} />
+                <Route path="/application" element={<DashboarApplication />} />
+
+                {/* END -   THANH NHUT COMPONENT */}
+
             </Route>
 
             {/* Layout người dùng */}
-            {/*<Route element={<UserLayout />}>*/}
+            <Route element={<UserLayout />}>
+                <Route path="/userService" element={<UserService />} />
+
             {/*    <Route path="/" element={<HomeUser />} />*/}
             {/*    /!* có thể thêm các trang user khác ở đây *!/*/}
-            {/*</Route>*/}
+            </Route>
         </Routes>
 
       </Router>

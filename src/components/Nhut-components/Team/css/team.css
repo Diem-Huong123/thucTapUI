@@ -1,0 +1,81 @@
+.part-1-heading {
+  display: flex;
+}
+.team-card {
+  border: solid;
+  border-radius: 10px;
+  padding: 5px;
+  /* height: 40px; */
+  margin: 10px;
+}
+.team-card:hover,
+.team-card:hover .team-card-name {
+  /* background-color: #2980b9; */
+}
+.description-box,
+.developer-list,
+.application-list {
+  border: solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.part-2-team-container {
+  /* border: solid; */
+  /* border-radius: 10px; */
+  /* border-color: #2980b9; */
+  margin-top: 20px;
+}
+.add-team-button {
+  padding: 20px;
+  border-radius: 10px;
+  border: solid;
+  border-color: #2980b9;
+  margin-left: 80%;
+}
+
+.add-team-button:hover {
+  background-color: #2980b9;
+}
+
+.team-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.team-card-button-group {
+  margin-left: 75%;
+}
+
+.delete-team-button,
+.edit-team-button,
+.delete-member-button,
+.add-member-button,
+.add-this-member-button,
+.delete-application-button,
+.add-application-button,
+.cancel-add-application-button {
+  background-color: #3498db; /* Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.edit-team-button:hover,
+.add-member-button:hover
+{
+  background-color: white; /* Darker blue on hover */
+  color: black;
+}
+.add-this-member-button:hover{
+  background-color: green;
+}
+ .delete-member-button:hover, .delete-team-button:hover {
+  background-color: yellow;
+  color: black;
+}
